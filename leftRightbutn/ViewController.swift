@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func leftbtn(_ sender: UIButton) {
+        label.text="Left Button Pressed"
+    }
+    
+    @IBAction func rightBut(_ sender: UIButton) {
+        label.text="Right Button Pressed"
+    }
 }
 
